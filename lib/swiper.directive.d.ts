@@ -1,5 +1,6 @@
 import { SwiperOptions } from 'swiper';
 import { NgZone, ElementRef, AfterViewInit, OnDestroy, DoCheck, OnChanges, EventEmitter, SimpleChanges, KeyValueDiffers } from '@angular/core';
+import * as i0 from "@angular/core";
 export declare class SwiperDirective implements AfterViewInit, OnDestroy, DoCheck, OnChanges {
     private platformId;
     private zone;
@@ -80,4 +81,6 @@ export declare class SwiperDirective implements AfterViewInit, OnDestroy, DoChec
     nextSlide(speed?: number, silent?: boolean): void;
     stopAutoplay(reset?: boolean): void;
     startAutoplay(reset?: boolean): void;
+    static ɵfac: i0.ɵɵFactoryDef<SwiperDirective, [null, null, null, null, { optional: true; }]>;
+    static ɵdir: i0.ɵɵDirectiveDefWithMeta<SwiperDirective, "[swiper]", ["ngxSwiper"], { "index": "index"; "disabled": "disabled"; "performance": "performance"; "config": "swiper"; }, { "indexChange": "indexChange"; "S_INIT": "init"; "S_BEFOREDESTROY": "beforeDestroy"; "S_SCROLL": "scroll"; "S_PROGRESS": "progress"; "S_KEYPRESS": "keyPress"; "S_RESIZE": "resize"; "S_BREAKPOINT": "breakpoint"; "S_ZOOMCHANGE": "zoomChange"; "S_AFTERRESIZE": "afterResize"; "S_BEFORERESIZE": "beforeResize"; "S_LOOPFIX": "loopFix"; "S_BEFORELOOPFIX": "beforeLoopFix"; "S_SLIDERMOVE": "sliderMove"; "S_SLIDECHANGE": "slideChange"; "S_SETTRANSLATE": "setTranslate"; "S_SETTRANSITION": "setTransition"; "S_FROMEDGE": "fromEdge"; "S_TOEDGE": "toEdge"; "S_REACHEND": "reachEnd"; "S_REACHBEGINNING": "reachBeginning"; "S_AUTOPLAY": "autoplay"; "S_AUTOPLAYSTART": "autoplayStart"; "S_AUTOPLAYSTOP": "autoplayStop"; "S_IMAGESREADY": "imagesReady"; "S_LAZYIMAGELOAD": "lazyImageLoad"; "S_LAZYIMAGEREADY": "lazyImageReady"; "S_SCROLLDRAGEND": "scrollDragEnd"; "S_SCROLLDRAGMOVE": "scrollDragMove"; "S_SCROLLDRAGSTART": "scrollDragStart"; "S_NAVIGATIONHIDE": "navigationHide"; "S_NAVIGATIONSHOW": "navigationShow"; "S_PAGINATIONRENDER": "paginationRender"; "S_PAGINATIONUPDATE": "paginationUpdate"; "S_PAGINATIONHIDE": "paginationHide"; "S_PAGINATIONSHOW": "paginationShow"; "S_TAP": "swiperTap"; "S_CLICK": "swiperClick"; "S_DOUBLETAP": "swiperDoubleTap"; "S_TOUCHEND": "swiperTouchEnd"; "S_TOUCHMOVE": "swiperTouchMove"; "S_TOUCHSTART": "swiperTouchStart"; "S_TOUCHMOVEOPPOSITE": "swiperTouchMoveOpposite"; "S_TRANSITIONEND": "swiperTransitionEnd"; "S_TRANSITIONSTART": "swiperTransitionStart"; "S_SLIDEPREVTRANSITIONEND": "slidePrevTransitionEnd"; "S_SLIDEPREVTRANSITIONSTART": "slidePrevTransitionStart"; "S_SLIDENEXTTRANSITIONEND": "slideNextTransitionEnd"; "S_SLIDENEXTTRANSITIONSTART": "slideNextTransitionStart"; "S_SLIDECHANGETRANSITIONEND": "slideChangeTransitionEnd"; "S_SLIDECHANGETRANSITIONSTART": "slideChangeTransitionStart"; "S_OBSERVERUPDATE": "observerUpdate"; }, never>;
 }
