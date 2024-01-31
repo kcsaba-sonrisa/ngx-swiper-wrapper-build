@@ -2,28 +2,35 @@
   "name": "ngx-swiper-wrapper",
   "description": "Angular wrapper library for Swiper",
   "bugs": "https://github.com/zefoy/ngx-swiper-wrapper/issues",
-  "version": "10.0.0",
+  "version": "17.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/zefoy/ngx-swiper-wrapper.git"
   },
   "peerDependencies": {
-    "swiper": ">=6.0.0",
+    "swiper": "6.x",
     "@angular/common": ">=9.0.0",
     "@angular/core": ">=9.0.0"
   },
-  "main": "bundles/ngx-swiper-wrapper.umd.js",
-  "module": "fesm2015/ngx-swiper-wrapper.js",
-  "es2015": "fesm2015/ngx-swiper-wrapper.js",
-  "esm2015": "esm2015/ngx-swiper-wrapper.js",
-  "fesm2015": "fesm2015/ngx-swiper-wrapper.js",
-  "typings": "ngx-swiper-wrapper.d.ts",
+  "module": "fesm2022/ngx-swiper-wrapper.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/ngx-swiper-wrapper.mjs",
+      "esm": "./esm2022/ngx-swiper-wrapper.mjs",
+      "default": "./fesm2022/ngx-swiper-wrapper.mjs"
+    }
+  },
   "sideEffects": false,
   "dependencies": {
-    "tslib": "^2.0.0"
+    "tslib": "^2.3.0"
   },
   "scripts": {
-    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
   }
 }

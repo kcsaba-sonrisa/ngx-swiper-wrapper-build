@@ -2,7 +2,7 @@ import { InjectionToken } from '@angular/core';
 import { SwiperOptions } from 'swiper';
 import { SwiperEvents } from 'swiper/types/swiper-events';
 export declare const SWIPER_CONFIG: InjectionToken<SwiperOptions>;
-export declare type SwiperEvent = keyof SwiperEvents | 'scroll' | 'keyPress' | 'beforeResize' | 'swiperTap' | 'swiperClick' | 'swiperDoubleTap' | 'swiperTouchEnd' | 'swiperTouchMove' | 'swiperTouchStart' | 'swiperTouchMoveOpposite' | 'swiperTransitionEnd' | 'swiperTransitionStart';
+export type SwiperEvent = keyof SwiperEvents | 'scroll' | 'keyPress' | 'beforeResize' | 'swiperTap' | 'swiperClick' | 'swiperDoubleTap' | 'swiperTouchEnd' | 'swiperTouchMove' | 'swiperTouchStart' | 'swiperTouchMoveOpposite' | 'swiperTransitionEnd' | 'swiperTransitionStart';
 export declare const SwiperEventNames: SwiperEvent[];
 export interface SwiperA11YInterface {
     enabled?: boolean;
@@ -251,10 +251,11 @@ export declare class SwiperConfig implements SwiperOptions {
     constructor(config?: SwiperOptions);
     assign(config?: SwiperOptions | any, target?: any): void;
 }
-export declare type SwiperFormatFractionFunction = (fraction: number) => number;
-export declare type SwiperRenderSlideFunction = (slide: any, index: number) => HTMLElement;
-export declare type SwiperRenderExternalFunction = (data: any) => void;
-export declare type SwiperRenderCustomFunction = (swiper: any, current: number, total: number) => string;
-export declare type SwiperRenderBulletFunction = (index: number, className: string) => string;
-export declare type SwiperRenderFractionFunction = (currentClass: string, totalClass: string) => string;
-export declare type SwiperRenderProgressbarFunction = (progressbarClass: string) => string;
+export type SwiperFormatFractionFunction = (fraction: number) => number;
+export type SwiperRenderSlideFunction = (slide: any, index: number) => HTMLElement;
+export type SwiperRenderExternalFunction = (data: any) => void;
+export type SwiperRenderCustomFunction = (swiper: any, current: number, total: number) => string;
+export type SwiperRenderBulletFunction = (index: number, className: string) => string;
+export type SwiperRenderFractionFunction = (currentClass: string, totalClass: string) => string;
+export type SwiperRenderProgressbarFunction = (progressbarClass: string) => string;
+//# sourceMappingURL=swiper.interfaces.d.ts.map
